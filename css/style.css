@@ -1,0 +1,112 @@
+/*Default.
+*******************************************************************************************************************************/
+*,pre,figure,dl,dd,dt,ul,ol,h1,h2,h3,h4,h5,p,form,html,body{margin:0;padding:0}img{border:0;vertical-align:top;-ms-interpolation-mode:bicubic}body{line-height:1}ol,ul{list-style-type:none}:focus{outline:none}table{border-collapse:collapse;border-spacing:0}.clear{clear:both;height:1px;font-size:1px;visibility:hidden}ins{text-decoration:none}input,textarea,select{margin:0}a{cursor:pointer;text-decoration:none;}
+h1{letter-spacing: 0.3px;}
+.cfix:before,.cfix:after{content:"";display:table}.cfix:after{clear:both}
+figure{padding:0;margin:0;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0}
+fieldset{margin:0;padding:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-before:0;-webkit-padding-start:0;-webkit-padding-end:0;-webkit-padding-after:0;border:0}
+textarea{overflow:auto}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}
+button[disabled],input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'OpenSansRegular';
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.fix {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+.fix__inputText {
+	border: 1px solid #48BBEC;
+	padding: 4px 5px 3px;
+	font-size: 16px;
+  border-radius: 4px;
+  color: #48BBEC;
+  outline: none;
+}
+
+.fix__link {
+	background-color: #48BBEC;
+	color: #fff;
+	padding: 4px 5px;
+	border-radius: 4px;
+}
+
+.homes__wrap {
+	border-bottom: 1px solid #ddd;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 30px 0;
+	position: relative;
+}
+
+.geo {
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	color: #48BBEC;
+}
+
+.transparency {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+	z-index: 10;
+}
+
+.closeMap {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 40px;
+	color: #48BBEC;
+}
+
+#map {
+	width: 	90%;
+	height: 90%;
+	border: solid 1px #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.homes__image {
+	width: 50%;
+	min-width:100px;
+	display: block;
+}
+
+.homes__lat,
+.homes__lng {
+	display: none;
+}
+
+span, p {
+	display: block;
+	padding-top: 5px;
+}
